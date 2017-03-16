@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/users_videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:drawableStart="@drawable/ic_heart_white_24dp"
+            android:id="@+id/users_hearts_count"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:drawableStart="@drawable/ic_eye_white_24dp"
+            android:id="@+id/users_views_count"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/users_sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:umanoPanelHeight="45dp"
+        sothree:umanoShadowHeight="4dp"
+        sothree:umanoParallaxOffset="100dp"
+        sothree:umanoDragView="@+id/user_dragView"
+        sothree:umanoOverlay="true"
+        sothree:umanoScrollableView="@+id/list">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="false"
+            android:id="@+id/user_dragView">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/users_recyclerView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:padding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_comment_multiple_outline_white_24dp"
+                        android:hint="@string/comments_hint"
+                        android:id="@+id/users_comments_box"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/users_post_comment"
+                    android:background="@drawable/around_button_selector"
+                    android:text="@string/send_comment"
+                    android:paddingEnd="2dp"
+                    android:paddingStart="2dp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+</RelativeLayout>

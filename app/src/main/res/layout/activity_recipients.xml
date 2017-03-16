@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <VideoView
+        android:id="@+id/recipients_videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/cancel"
+        android:id="@+id/cancel_post"
+        android:src="@drawable/ic_close_box_outline_white_24dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/caption"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:hint="@string/comment_box_label"
+        android:background="@drawable/rounded_edit_text"
+        style="@style/Widget.AppCompat.EditText"
+        android:textColorHint="@color/textColorPrimary"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/share_round_button"
+        android:text="@string/share_around"
+        android:textColor="@color/black"
+        android:background="@drawable/around_button_selector"/>
+
+</RelativeLayout>

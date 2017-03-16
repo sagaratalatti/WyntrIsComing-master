@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:text="@string/widget_title"
+        android:textSize="25sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/textColorPrimary"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" />
+
+    <GridView
+        android:id="@+id/widget_grid_view"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:background="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/widget_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="@string/empty_geo_feeds_label"/>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="43dp" android:background="@color/colorPrimaryDark">
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/maps"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:clickable="true"
+        android:onClick="openMapsActivity"
+        android:background="@drawable/button"
+        android:src="@drawable/ic_earth_white_36dp"/>
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/profile_view"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+        android:onClick="buttonOnClick"
+        android:clickable="true"
+        android:id="@+id/account_icon"
+        android:background="@drawable/button"
+        android:src="@drawable/ic_account_settings_white_36dp"/>
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/manage_followers"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:clickable="true"
+        android:onClick="buttonOnClick"
+        android:background="@drawable/button"
+        android:src="@drawable/ic_human_male_female_white_36dp"
+        android:id="@+id/friends_icon" />
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/record_video"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+        android:onClick="openCamera"
+        android:clickable="true"
+        android:background="@drawable/button"
+        android:src="@drawable/ic_camera_iris_white_36dp" />
+
+</LinearLayout>

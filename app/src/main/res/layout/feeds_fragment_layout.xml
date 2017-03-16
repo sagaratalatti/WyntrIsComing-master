@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty_recycler_text"
+        android:drawableStart="@drawable/ic_camera_iris_white_36dp"
+        android:drawablePadding="5dp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/geo_recycler_view"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/geo_feeds_items"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

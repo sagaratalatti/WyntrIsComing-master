@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/transparent">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <FrameLayout
+        android:id="@+id/like_view_container"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_above="@+id/edit_comment_container"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="500dp">
+
+        <View
+            android:id="@+id/like_view"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="500dp"
+            android:background="@drawable/like_background"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/liked_view"
+            android:layout_width="match_parent"
+            android:contentDescription="@string/liked"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/ic_heart_outline_white"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_comment_container"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/comment_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:hint="@string/comment_box_label"
+            style="@style/Widget.AppCompat.EditText"
+            android:textColorHint="@color/white"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/send_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:visibility="gone"
+            android:background="@drawable/rounded_edit_text"
+            android:textColor="@color/textColorPrimary"
+            android:hint="@string/send_comment"
+            android:textSize="14sp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:tag="tint_selector_lighter|accent_color,text_size|body"
+            android:gravity="center|end"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:text="@string/swipe_to_comment"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+</RelativeLayout>

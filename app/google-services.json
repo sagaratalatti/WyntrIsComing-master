@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "752597243803",
+    "firebase_url": "https://wyntr-beta-fc9d7.firebaseio.com",
+    "project_id": "wyntr-beta-fc9d7",
+    "storage_bucket": "wyntr-beta-fc9d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752597243803:android:d3fb6099b5ae0fbe",
+        "android_client_info": {
+          "package_name": "io.wyntr.peepster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752597243803-p1togmhq8k4pjuvfrdlc479tb9u5aqdb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.wyntr.peepster",
+            "certificate_hash": "6FFF59030BD3A91802D3FC012295CB98855B5F2E"
+          }
+        },
+        {
+          "client_id": "752597243803-pma6tbefe8u8sous34tlp90enpe3epjq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQSTPt5h0PEkmnMnnZNlDcTFDVQFvr3-4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752597243803-pma6tbefe8u8sous34tlp90enpe3epjq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
