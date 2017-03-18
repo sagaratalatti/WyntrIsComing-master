@@ -131,7 +131,6 @@ public class GeoFeedsAdapter extends RecyclerView.Adapter<PostViewHolder> {
     public void swapCursor(Cursor newCursor) {
         mCursor = newCursor;
         notifyDataSetChanged();
-       // mEmptyView.setVisibility(getItemCount() == 0 ? View.VISIBLE : View.GONE);
     }
 
     public Cursor getCursor() {

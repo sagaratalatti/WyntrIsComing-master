@@ -72,7 +72,7 @@ public class FriendsQueryAdapter extends FriendsAdapter<People, FriendsViewHolde
             @Override
             public void onClick(View view) {
                         if (currentUserId == null) {
-                            Toast.makeText(mActivity, "You need to sign in to follow someone.",
+                            Toast.makeText(mActivity, mActivity.getString(R.string.login_failed),
                                     Toast.LENGTH_SHORT).show();
                             return;
                         }

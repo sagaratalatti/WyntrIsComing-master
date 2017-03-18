@@ -14,6 +14,7 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="45dp"
+            android:contentDescription="@string/profile_photo"
             android:layout_height="45dp"
             android:id="@+id/friends_profile_photo"
             android:layout_gravity="center"/>
@@ -29,6 +30,7 @@
 
     <ImageView
         android:layout_width="wrap_content"
+        android:contentDescription="@string/add_friends"
         android:layout_height="wrap_content"
         android:id="@+id/add_button"
         android:layout_marginStart="10dp"

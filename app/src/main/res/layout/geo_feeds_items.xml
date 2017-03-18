@@ -19,6 +19,7 @@
             android:padding="10dp">
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/post_author_icon"
+                android:contentDescription="@string/profile_photo"
                 android:layout_width="@dimen/post_author_icon_size"
                 android:layout_height="@dimen/post_author_icon_size"
                 android:layout_centerVertical="true"
@@ -31,8 +32,8 @@
                 android:layout_toEndOf="@id/post_author_icon"
                 android:layout_marginStart="4dp"
                 style="@style/Base.TextAppearance.AppCompat.Title"
-                android:textColor="@android:color/primary_text_light_nodisable"
-                android:text="111Unknown222"/>
+                android:textColor="@android:color/primary_text_light_nodisable" />
+
             <TextView
                 android:id="@+id/post_timestamp"
                 android:layout_width="wrap_content"
@@ -42,7 +43,9 @@
                 android:layout_gravity="end"
                 android:textColor="@android:color/primary_text_light"
                 android:textSize="18sp" />
+
         </RelativeLayout>
+
         <ImageView
             android:id="@+id/post_photo"
             android:layout_width="match_parent"
@@ -106,12 +109,14 @@
 
             <ImageView
                 android:id="@+id/post_like_icon"
+                android:contentDescription="@string/like_icon"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/ic_heart_outline_grey600_18dp"/>
             <ImageView
                 android:id="@+id/post_comment_icon"
                 android:layout_width="30dp"
+                android:contentDescription="@string/comments_icon"
                 android:layout_height="30dp"
                 android:layout_marginStart="6dp"
                 android:layout_toEndOf="@id/post_like_icon"
@@ -119,6 +124,7 @@
 
             <ImageView
                 android:layout_width="30dp"
+                android:contentDescription="@string/views_icon"
                 android:layout_height="30dp"
                 android:layout_marginEnd="6dp"
                 android:layout_alignParentEnd="true"

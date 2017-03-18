@@ -30,7 +30,7 @@ public class CommentsQueryAdapter extends FirebaseRecyclerAdapter<Comment, Comme
 
     @Override
     protected void populateViewHolder(CommentsViewHolder viewHolder, Comment model, int position, List<String> mKeys) {
-        viewHolder.setPhoto(model.getUser().getProfile_picture());
+        viewHolder.setPhoto(model.getUser().getProfile_picture(), model.getUser().getFull_name());
         viewHolder.setAuthor(model.getUser().getFull_name(), model.getUser().getUid());
         viewHolder.commentsText.setText(model.getText());
         viewHolder.setTimestamp(DateUtils.getRelativeTimeSpanString(

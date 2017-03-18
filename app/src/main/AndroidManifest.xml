@@ -115,15 +115,6 @@
                 android:value=".activities.MainActivity" />
         </activity>
         <activity
-            android:name=".activities.PostsVideoView"
-            android:label="SingleVideoView"
-            android:parentActivityName=".activities.MainActivity"
-            android:screenOrientation="portrait">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.UserProfileActivity" />
-        </activity>
-        <activity
             android:name=".activities.UserProfileActivity"
             android:label="Wyntr"
             android:parentActivityName=".activities.MainActivity"

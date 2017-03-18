@@ -75,6 +75,7 @@
                 <ImageButton
                     android:layout_width="0dp"
                     android:layout_weight="1"
+                    android:contentDescription="@string/delete_video"
                     android:layout_height="wrap_content"
                     android:id="@+id/delete_video"
                     android:layout_gravity="center"

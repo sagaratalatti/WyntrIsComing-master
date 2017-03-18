@@ -245,7 +245,7 @@ public class RecipientsActivity extends AppCompatActivity implements EasyPermiss
     @Override
     public void onBitmapResized(Bitmap resizedBitmap, int mMaxDimension) {
         if (resizedBitmap == null) {
-            Toast.makeText(getApplicationContext(), "Couldn't resize bitmap.",
+            Toast.makeText(getApplicationContext(), getString(R.string.bitmap_resize_failed),
                     Toast.LENGTH_SHORT).show();
             return;
         }
@@ -265,7 +265,7 @@ public class RecipientsActivity extends AppCompatActivity implements EasyPermiss
                 shareAround.setEnabled(true);
                 if (error == null) {
                     progressDialog.dismiss();
-                    Toast.makeText(RecipientsActivity.this, "Shared Around!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RecipientsActivity.this, getString(R.string.shared_around_success), Toast.LENGTH_SHORT).show();
                     shareAround.setEnabled(false);
                     finish();
                 } else {

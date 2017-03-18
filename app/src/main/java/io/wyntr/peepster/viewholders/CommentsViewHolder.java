@@ -36,7 +36,8 @@ public class CommentsViewHolder extends RecyclerView.ViewHolder{
         timeStamp = (TextView)itemView.findViewById(R.id.comments_timestamp);
     }
 
-    public void setPhoto(String url) {
+    public void setPhoto(String url, String author) {
+        userImage.setContentDescription(author);
         GlideUtil.loadProfileIcon(url, userImage);
     }
 

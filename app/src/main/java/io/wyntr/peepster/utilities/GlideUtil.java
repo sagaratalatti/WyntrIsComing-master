@@ -15,6 +15,7 @@ import io.wyntr.peepster.R;
  */
 
 public class GlideUtil {
+
     public static void loadImage(String url, ImageView imageView) {
         Context context = imageView.getContext();
         ColorDrawable cd = new ColorDrawable(ContextCompat.getColor(context, R.color.colorPrimary));

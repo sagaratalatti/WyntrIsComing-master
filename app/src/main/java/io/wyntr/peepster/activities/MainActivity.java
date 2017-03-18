@@ -166,8 +166,8 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
 
     private void setupViewPager(ViewPager mViewPager) {
         mSectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
-        mSectionsPagerAdapter.addFragment(new GeoFragment(), "Around You");
-        mSectionsPagerAdapter.addFragment(new FeedsFragment(), "Following");
+        mSectionsPagerAdapter.addFragment(new GeoFragment(), getString(R.string.around_you));
+        mSectionsPagerAdapter.addFragment(new FeedsFragment(), getString(R.string.following));
         mViewPager.setAdapter(mSectionsPagerAdapter);
     }
 
@@ -228,7 +228,7 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
                     compress();
                 }
             } else if (resCode == RESULT_CANCELED) {
-                Toast.makeText(this, "No Recorded Video Found!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.cancel_recording), Toast.LENGTH_SHORT).show();
             }
 
         }
@@ -301,12 +301,12 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
             if (senduri != null) {
 
             } else
-                Toast.makeText(getApplicationContext(), "Could not find Video File", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), getString(R.string.video_file_not_found), Toast.LENGTH_SHORT).show();
             thumb = ThumbnailUtils.createVideoThumbnail(senduri.getPath(), MediaStore.Video.Thumbnails.FULL_SCREEN_KIND);
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
             progressBar.setVisibility(View.GONE);
             if (compressed) {
-                Toast.makeText(MainActivity.this, "Video Compressed Successfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, getString(R.string.video_compressed), Toast.LENGTH_SHORT).show();
                deleteTempFile();
             }
             Intent recipientsIntent = new Intent(MainActivity.this, RecipientsActivity.class);

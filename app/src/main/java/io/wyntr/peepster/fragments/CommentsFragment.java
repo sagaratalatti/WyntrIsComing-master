@@ -141,7 +141,7 @@ public class CommentsFragment extends DialogFragment {
                         public void onComplete(DatabaseError error, DatabaseReference firebase) {
                             if (error != null) {
                                 Log.w(TAG, "Error posting comment: " + error.getMessage());
-                                Toast.makeText(getActivity(), "Error posting comment.", Toast
+                                Toast.makeText(getActivity(), getString(R.string.error_post_comment), Toast
                                         .LENGTH_SHORT).show();
                                 commentBox.setText(commentText);
                             } else {
@@ -151,7 +151,7 @@ public class CommentsFragment extends DialogFragment {
                         }
                     });
                 } else {
-                    Toast.makeText(getActivity(), "Write something...", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), getString(R.string.error_empty_comment), Toast.LENGTH_SHORT).show();
                 }
 
             }

@@ -16,7 +16,7 @@ android {
 
     signingConfigs{
         release{
-            storeFile file("wyntr.keystore.jks")
+            storeFile file("WyntrIsComing-master.keystore.jks")
             storePassword "udacity-capstone"
             keyAlias "wyntr"
             keyPassword "udacity-capstone"

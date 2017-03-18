@@ -147,7 +147,7 @@ public class SingleVideoView extends Activity {
                                     public void onComplete(DatabaseError error, DatabaseReference firebase) {
                                         if (error != null) {
                                             Log.w(TAG, "Error posting like: " + error.getMessage());
-                                            Toast.makeText(SingleVideoView.this, "Error posting like.", Toast
+                                            Toast.makeText(SingleVideoView.this, getString(R.string.error_post_like), Toast
                                                     .LENGTH_SHORT).show();
                                         }
                                     }
@@ -241,8 +241,6 @@ public class SingleVideoView extends Activity {
                                                          public void onComplete(DatabaseError error, DatabaseReference firebase) {
                                                              if (error != null) {
                                                                  Log.w(TAG, "Error posting like: " + error.getMessage());
-                                                                 Toast.makeText(SingleVideoView.this, "Error updating view.", Toast
-                                                                         .LENGTH_SHORT).show();
                                                              }
                                                          }
                                                      });
@@ -336,7 +334,7 @@ public class SingleVideoView extends Activity {
                         public void onComplete(DatabaseError error, DatabaseReference firebase) {
                             if (error != null) {
                                 Log.w(TAG, "Error posting comment: " + error.getMessage());
-                                Toast.makeText(SingleVideoView.this, "Error posting comment.", Toast
+                                Toast.makeText(SingleVideoView.this, getString(R.string.error_post_comment), Toast
                                         .LENGTH_SHORT).show();
                                 CommentBox.setText(commentText);
                             } else {

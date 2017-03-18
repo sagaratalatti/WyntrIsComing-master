@@ -106,12 +106,14 @@
 
             <ImageView
                 android:id="@+id/post_like_icon"
+                android:contentDescription="@string/like_icon"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/ic_heart_outline_grey600_18dp"/>
             <ImageView
                 android:id="@+id/post_comment_icon"
                 android:layout_width="30dp"
+                android:contentDescription="@string/comments_icon"
                 android:layout_height="30dp"
                 android:layout_marginStart="6dp"
                 android:layout_toEndOf="@id/post_like_icon"
@@ -119,6 +121,7 @@
 
             <ImageView
                 android:layout_width="30dp"
+                android:contentDescription="@string/views_icon"
                 android:layout_height="30dp"
                 android:layout_marginEnd="6dp"
                 android:layout_alignParentEnd="true"
