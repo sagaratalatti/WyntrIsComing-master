@@ -19,9 +19,11 @@
     <string name="error_empty_comment">Write something…</string>
     <string name="error_post_comment">Comment failed!</string>
     <string name="login_failed">Oops! You have been logged out</string>
+    <string name="follow_someone">You need to sign in to follow someone.</string>
     <string name="shared_around_success">Your video has been successfully shared Around!</string>
     <string name="maps">Map View</string>
     <string name="around_you">Around You</string>
+    <string name="comment_error">Oops… Cannot post comment</string>
     <string name="cancel_recording">Video Recording Cancelled</string>
     <string name="video_file_not_found">Cannot find video file!</string>
     <string name="video_compressed">Recorded video has been successfully compressed!</string>

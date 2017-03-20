@@ -78,7 +78,7 @@ public class FeedsProvider extends ContentProvider {
     public int delete(Uri uri, String selection, String[] selectionArgs) {
         final SQLiteDatabase db = mOpenHelper.getWritableDatabase();
         int rowsDeleted;
-        if (null == selection) selection = "1";
+        if (selection == null) selection = "1";
         rowsDeleted = db.delete(
                 FeedsContract.FeedsEntry.TABLE_NAME, selection, selectionArgs);
         if (rowsDeleted != 0) {

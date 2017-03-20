@@ -263,7 +263,7 @@ public class UserVideoView extends AppCompatActivity {
                     public void onComplete(DatabaseError error, DatabaseReference firebase) {
                         if (error != null) {
                             Log.w(TAG, "Error posting comment: " + error.getMessage());
-                            Toast.makeText(UserVideoView.this, "Error posting comment.", Toast
+                            Toast.makeText(UserVideoView.this, getString(R.string.comment_error), Toast
                                     .LENGTH_SHORT).show();
                             CommentBox.setText(commentText);
                         } else {

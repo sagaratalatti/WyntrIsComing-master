@@ -119,7 +119,7 @@ public class UserProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (currentUserId == null) {
-                    Toast.makeText(UserProfileActivity.this, "You need to sign in to follow someone.",
+                    Toast.makeText(UserProfileActivity.this, getString(R.string.follow_someone),
                             Toast.LENGTH_SHORT).show();
                     return;
                 }
